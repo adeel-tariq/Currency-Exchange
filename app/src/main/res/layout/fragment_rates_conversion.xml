@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mxn_currency_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="@dimen/_4sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_2sdp">
+
+                <TextView
+                    android:id="@+id/mxn_currency_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="MXN"
+                    android:textSize="@dimen/_24ssp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@string/font_medium"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <LinearLayout
+                    android:id="@+id/mxn_currency_exchange_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="end"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:id="@+id/euro_to_mxn_converted_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-----"
+                        android:textColor="@color/black"
+                        android:fontFamily="@string/font_semi_bold"
+                        android:textSize="@dimen/_12ssp"/>
+
+                    <TextView
+                        android:id="@+id/euro_to_mxn_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-----"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@string/font_light"
+                        android:textSize="@dimen/_9ssp"/>
+
+                    <TextView
+                        android:id="@+id/mxn_to_euro_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-----"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@string/font_light"
+                        android:textSize="@dimen/_9ssp"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/aud_currency_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="@dimen/_4sdp"
+            app:layout_constraintTop_toBottomOf="@id/mxn_currency_card"
+            app:layout_constraintStart_toStartOf="@id/mxn_currency_card"
+            app:layout_constraintEnd_toEndOf="@id/mxn_currency_card">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_2sdp">
+
+                <TextView
+                    android:id="@+id/aud_currency_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="AUD"
+                    android:textSize="@dimen/_24ssp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@string/font_medium"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <LinearLayout
+                    android:id="@+id/aud_currency_exchange_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="end"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:id="@+id/euro_to_aud_converted_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-----"
+                        android:textColor="@color/black"
+                        android:fontFamily="@string/font_semi_bold"
+                        android:textSize="@dimen/_12ssp"/>
+
+                    <TextView
+                        android:id="@+id/euro_to_aud_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-----"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@string/font_light"
+                        android:textSize="@dimen/_9ssp"/>
+
+                    <TextView
+                        android:id="@+id/aud_to_euro_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-----"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@string/font_light"
+                        android:textSize="@dimen/_9ssp"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/hkd_currency_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="@dimen/_4sdp"
+            app:layout_constraintTop_toBottomOf="@id/aud_currency_card"
+            app:layout_constraintStart_toStartOf="@id/mxn_currency_card"
+            app:layout_constraintEnd_toEndOf="@id/mxn_currency_card">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_2sdp">
+
+                <TextView
+                    android:id="@+id/hkd_currency_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="HKD"
+                    android:textSize="@dimen/_24ssp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@string/font_medium"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <LinearLayout
+                    android:id="@+id/hkd_currency_exchange_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="end"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:id="@+id/euro_to_hkd_converted_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-----"
+                        android:textColor="@color/black"
+                        android:fontFamily="@string/font_semi_bold"
+                        android:textSize="@dimen/_12ssp"/>
+
+                    <TextView
+                        android:id="@+id/euro_to_hkd_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-----"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@string/font_light"
+                        android:textSize="@dimen/_9ssp"/>
+
+                    <TextView
+                        android:id="@+id/hkd_to_euro_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-----"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@string/font_light"
+                        android:textSize="@dimen/_9ssp"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/disclaimer_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Due to API limitations exchange rate of MXN, AUD and HKD are fetched against 1 EUR at the interval of 30 seconds and rest is calculated mathmatically.\nValues shown are upto 2 decimal points only"
+            android:textAlignment="center"
+            android:fontFamily="@string/font_light"
+            android:textSize="@dimen/_9ssp"
+            android:layout_margin="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:elevation="@dimen/_4sdp"
+            android:progressTint="@color/colorPrimary"
+            android:translationZ="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:visibility="@{isLoading ? View.VISIBLE : View.GONE}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="isLoading"
+            type="boolean" />
+
+        <variable
+            name="viewModel"
+            type="com.example.currencycoverter.ui.main.viewmodel.CurrencyChangeViewModel" />
+    </data>
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:text="example"
+    android:fontFamily="@string/font_regular"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_14ssp"
+    android:textAppearance="?attr/textAppearanceSubtitle1"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

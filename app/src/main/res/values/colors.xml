@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#006C9D</color>
+<!--    <color name="colorPrimaryDark">#00415F</color>-->
+    <color name="colorAccent">#5DCBFD</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#616161</color>
+    <color name="lt_grey">#EEEEEE</color>
+    <color name="transparent">#00000000</color>
+    <color name="ripple">#C9C9C9</color>
+</resources>
